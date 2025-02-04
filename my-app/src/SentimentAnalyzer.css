@@ -1,0 +1,105 @@
+/* SentimentAnalyzer.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .text-area {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  .input-group {
+    display: flex;
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  
+  .model-select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    appearance: none;
+    background-color: white;
+    padding-left: 10px;
+    width: 150px; 
+  }
+  
+  .analyze-button {
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analyze-button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .analyze-button:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .analyze-button:disabled {
+    background-color: #cccccc;
+    cursor: default;
+    transform: scale(1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    width: 90%;
+  }
+  
+  .result h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .sentiment.positive {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .sentiment.negative {
+    color: red;
+    font-weight: bold;
+  }
