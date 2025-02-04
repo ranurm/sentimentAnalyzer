@@ -8,7 +8,7 @@ Needed dependencies are Transformers, Groq, Unicorn, Pydantic, and FastAPI.
 pip install transformers groq uvicorn pydantic fastapi
 ```
 ### Instructions to run
-Clone the repositorio.
+Clone the repository.
 ```
 git clone https://github.com/ranurm/sentimentAnalyzer.git
 cd sentimentAnalyzer
@@ -22,5 +22,24 @@ You can run the FastAPI server with Uvicorn.
 ```
 uvicorn movieAPI:app --reload
 ```
-## my-app (Frontend)
+### Calling API locally without frontend
+Curl example:
+```
+curl -X POST "http://127.0.0.1:8000/analyze/"      -H "Content-Type: application/json"      -d '{"text": "Bad!!", "model": "llama"}'
+```
+Postman example:
+![image](https://github.com/user-attachments/assets/591008bc-c9db-4297-b01d-d359f88c6acf)
 
+## my-app (Frontend)
+### Instructions to run
+Clone the repository.
+```
+git clone https://github.com/ranurm/sentimentAnalyzer.git
+cd sentimentAnalyze
+cd my-app
+```
+Run the app.
+```
+npm install
+npm run
+```
