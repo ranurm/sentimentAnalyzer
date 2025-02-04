@@ -7,7 +7,7 @@ Needed dependencies are Transformers, Groq, Unicorn, Pydantic, and FastAPI.
 ```
 pip install transformers groq uvicorn pydantic fastapi
 ```
-## Instructions to run
+### Instructions to run
 Clone the repositorio.
 ```
 git clone https://github.com/ranurm/sentimentAnalyzer.git
